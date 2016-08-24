@@ -1,0 +1,11 @@
+CAF.xml
+.cer
+.pem
+.pfx
+certs/claves.txt
+.idea/
+certs/roco.pfx
+*.pem
+certs/300.cer
+*.cer
+wsdl/README.md

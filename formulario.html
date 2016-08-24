@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo para DTE</title>
+</head>
+<body>
+    <form id="formulario_dte" method="post" action="generar_dte.php">
+        <h3>Documento</h3>
+        <table>
+            <tr>
+                <td><label>Tipo de DTE: </label></td>
+                <td><input id="tipodte" name="tipodte" type="text" value="33" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Folio: </label></td>
+                <td><input id="folio" name="folio" type="text" value="1"></td>
+            </tr>
+            <tr>
+                <td><label>Fecha de Emision: </label></td>
+                <td><input id="fchemis" name="fchemis" type="date"></td>
+            </tr>
+        </table>
+
+        <!-- Datos del Emisor -->
+        <h3>Emisor</h3>
+        <table>
+            <tr>
+                <td><label>RUT: </label></td>
+                <td><input id="rutemisor" name="rutemisor" type="text" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Razón Social: </label></td>
+                <td><input id="rznsoc" name="rznsoc" type="text" ></td>
+            </tr>
+            <tr>
+                <td><label>Giro: </label></td>
+                <td><input id="giroemis" name="giroemis" type="text" /></td>
+            </tr>
+            <tr>
+                <td><label>Acteco: </label></td>
+                <td><input id="acteco" name="acteco" type="text" ></td>
+            </tr>
+            <tr>
+                <td><label>CdgSIISucur:</label></td>
+                <td><input id="cdgsiisucur" name="cdgsiisucur" type="text" ></td>
+            </tr>
+            <tr>
+                <td><label>Dirección:</label></td>
+                <td><input id="dirorigen" name="dirorigen" type="text" ></td>
+            </tr>
+            <tr>
+                <td><label>CmnaOrigen:</label></td>
+                <td><input id="cmnaorigen" name="cmnaorigen" type="text" ></td>
+            </tr>
+            <tr>
+                <td><label>Ciudad Origen:</label></td>
+                <td><input id="ciudadorigen" name="ciudadorigen" type="text" ></td>
+            </tr>
+        </table>
+
+        <!-- Datos del Receptor -->
+        <h3>Receptor</h3>
+        <table>
+            <tr>
+                <td><label>RUT: </label></td>
+                <td><input id="rutrecep" name="rutrecep" type="text" value="77777777-7" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Razón Social: </label></td>
+                <td><input id="rznsocrecep" name="rznsocrecep" type="text" value="EMPRESA LTDA" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Giro: </label></td>
+                <td><input id="girorecep" name="girorecep" type="text" value="COMPUTACION" readonly/></td>
+            </tr>
+            <tr>
+                <td><label>Dirección: </label></td>
+                <td><input id="dirrecep" name="dirrecep" type="text" value="SAN DIEGO 2222" readonly></td>
+            </tr>
+            <tr>
+                <td><label>CmnaRecep:</label></td>
+                <td><input id="cmnarecep" name="cmnarecep" type="text" value="LA FLORIDA" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Ciudad:</label></td>
+                <td><input id="ciudadrecep" name="ciudadrecep" type="text" value="SANTIAGO" readonly></td>
+            </tr>
+        </table>
+
+        <!-- Datos del Item 1 -->
+        <h3>Item 1</h3>
+        <table>
+            <tr>
+                <td><label>NroLinDet: </label></td>
+                <td><input id="nrolindet1" name="nrolindet1" type="text" value="1"></td>
+            </tr>
+            <tr>
+                <td><label>Nombre Item: </label></td>
+                <td><input id="nmbitem1" name="nmbitem1" type="text" value="Cajón AFECTO"></td>
+            </tr>
+            <tr>
+                <td><label>Cantidad: </label></td>
+                <td><input id="qtyitem1" name="qtyitem1" type="text" value="164" /></td>
+            </tr>
+            <tr>
+                <td><label>Precio Unitario: </label></td>
+                <td><input id="prcitem1" name="prcitem1" type="text" value="3254"></td>
+            </tr>
+        </table>
+
+        <!-- Datos del Item 2 -->
+        <h3>Item 2</h3>
+        <table>
+            <tr>
+                <td><label>NroLinDet: </label></td>
+                <td><input id="nrolindet2" name="nrolindet2" type="text" value="2"></td>
+            </tr>
+            <tr>
+                <td><label>Nombre Item: </label></td>
+                <td><input id="nmbitem2" name="nmbitem2" type="text" value="Relleno AFECTO"></td>
+            </tr>
+            <tr>
+                <td><label>Cantidad: </label></td>
+                <td><input id="qtyitem2" name="qtyitem2" type="text" value="69" /></td>
+            </tr>
+            <tr>
+                <td><label>Precio Unitario: </label></td>
+                <td><input id="prcitem2" name="prcitem2" type="text" value="5413"></td>
+            </tr>
+        </table>
+        <input type="submit" value="GENERAR DTE">
+    </form>
+</body>
+</html>
